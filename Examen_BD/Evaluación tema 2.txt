@@ -1,0 +1,48 @@
+﻿Modelo de Evaluación Base de Datos 
+Criterios a tener en cuenta: 
+● Indicar nombre, apellido y curso. 
+ALUMNOS :DIANA FERNANDEZ, ELENA MARTINEZ 
+CURSO= 4°2° COMPUTACIÓN
+● El horario es el indicado mediante Classroom, no se recibirá absolutamente nada por mail. 
+● Leer los enunciados correctamente. 
+● En las consultas: copiar el código SQL + adjuntar captura de pantalla de los resultados por consola. ● Adjuntar la base de datos en un archivo aparte. ● Luego de la corrección, deberán defender la prueba de manera oral. 
+A) Verdadero o Falso (Justificar las falsas): 
+1. Una clave primaria NO puede contener valores nulos. V
+2. Para utilizar Order By es obligatorio utilizar un valor numérico. F
+es falso porque se puede hacer con cualquier tipo de dato
+3. En la Subconsulta puede utilizar operadores lógicos.V
+4. Un RIGHT JOIN devuelve SOLAMENTE TODOS los registros de la tabla derecha, aunque no tengan coincidencia en la izquierda. F, es falso porque tiene que tener coincidencia con los de la izquierda
+5. La cláusula HAVING se usa para filtrar los resultados obtenidos de una función de agregación. V
+B) Teoría: 
+1. Explica con tus palabras qué son las funciones agregadas. 
+Las funciones de agregación sirven para contar, sumar, sacar el promedio, el mínimo y el máximo de los registros de datos numéricos, estos se utilizan con having ya que fue creado específicamente para eso no como el where.
+
+
+
+
+2. ¿Qué hace Order by? Explique con un ejemplo.
+ El orden by sirve para ordenar de la forma que nos guste ya sea ascendente y descendente. Por ejemplo:
+      select Salario
+from empleados
+order by asc
+limit 1;
+
+
+3. Qué es Right Join De un ejemplo y realice un dibujo. 
+C) Problemática (DER) 
+La empresa EcoMove S.A. se dedica a la gestión y mantenimiento de vehículos eléctricos utilizados por distintas organizaciones para el transporte urbano. Cada organización puede tener varios vehículos asignados, los cuales son revisados periódicamente por técnicos especializados de la empresa. 
+Cada revisión incluye la fecha, el estado general del vehículo, el nivel de batería y el costo de mantenimiento.
+Los técnicos registran también las piezas reemplazadas y el tipo de servicio realizado (preventivo o correctivo). 
+EcoMove desea implementar un sistema basado en SQL que permita analizar el rendimiento de los vehículos, los costos de mantenimiento y la productividad de los técnicos. 
+Tareas: 
+● Diseñar el DER, identificando entidades, atributos y relaciones. 
+● Crear las tablas en SQL. 
+● Insertar al menos 3 registros en cada tabla (ADJUNTAR CAPTURAS DE LOS REGISTROS INGRESADOS) 
+D) Consultas SQL 
+1. Mostrar todos los vehículos con el nombre de la organización a la que pertenecen y el técnico responsable de la revisión. 
+2. Mostrar las revisiones cuyo costo de mantenimiento sea mayor al promedio general. 
+  
+3. Mostrar los técnicos que realizaron más de 3 revisiones. 
+4. Mostrar el vehículo con menor cantidad de revisiones realizadas. 
+5. Mostrar las organizaciones que tengan algún vehículo con nivel de batería inferior al promedio general. 
+6. Mostrar los tres técnicos con mayor cantidad de servicios correctivos realizados.
